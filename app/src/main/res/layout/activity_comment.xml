@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forum.ForumActivity"
+    android:orientation="vertical"
+    android:id="@+id/relative_layout1">
+
+    <include
+        layout="@layout/appbar_comment"
+        android:id="@+id/appbar_comment"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/appbar_comment"
+        android:id="@+id/recyclerView_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

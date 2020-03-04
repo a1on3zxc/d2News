@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">D2News</string>
+    <string-array name="menu_item">
+        <item>News</item>
+        <item>Forum</item>
+    </string-array>
+</resources>
